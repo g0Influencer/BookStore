@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+</head>
+<body>
+        <h3>Product List</h3>
+        <a href="/panel/add">Add</a>
+
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Photo</th>
+            </tr>
+            {{range .products}}
+            <tr>
+                <td>{{.Id}}</td>
+                <td>{{.Name}}</td>
+                <td>{{.Author}}</td>
+                <td>{{.Description}}</td>
+                <td>{{.Price}}</td>
+                <td>{{.Quantity}}</td>
+                <td>{{.Photo}}</td>
+                <td>
+                    <a href="/panel/edit?id={{.Id}}"> Edit |</a>
+                    <a href="/panel/delete?id={{.Id}}" onclick="return confirm('Are you sure?')" >Delete</a>
+                </td>
+            </tr>
+            {{end}}
+        </table>
+
+</body>
+</html>

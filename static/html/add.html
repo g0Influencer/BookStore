@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>Add Product</title>
+      </head>
+      <body>
+      <h3>Add Product</h3>
+        <form method="post" action="/panel/processadd">
+          <table>
+            <tr>
+              <td>Id</td>
+              <td><input type="text" name="id"> </td>
+            </tr>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" name="name"> </td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Author</td>
+              <td><input type="text" name="author"> </td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td><input type="number" name="price" min="0"></td>
+            </tr>
+            <tr>
+              <td>Quantity</td>
+              <td><input type="number" name="quantity" min="0"></td>
+            </tr>
+            <tr>
+              <td>Description</td>
+              <td>
+                <textarea type="text" name="description"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Photo</td>
+              <td>
+                <textarea name="photo" placeholder="enter pic url"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <input type="submit" value="Save">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </body>
+</html>

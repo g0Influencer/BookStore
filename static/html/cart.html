@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/content.css" >
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-
+    mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <span class="go">GO</span>
+            <span class="read">Read</span>
+        </a>
+        <p>Знание - сила!</p>
+    </div>
+    <div class="search-box">
+        <form action="#">
+            <input type="text" placeholder="Поиск..." id="elastic">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </div>
+    <ul>
+        <li><a href="/fav"><i class="fas fa-heart"></i> Избранное</a></li>
+        <li><a href="/cart"><i class="fas fa-shopping-bag"></i> Корзина</a></li>
+        <li><a href="/api/user/login"><i class="fas fa-user"></i> Вход</a></li>
+    </ul>
+</header>
+
+<div class="sidebar">
+   <span class="total">Ваш заказ</span>
+    <hr>
+   <p class="order">Подытог (без учета доставки)
+   </p>
+    <hr>
+    <span class="sum">{{.total}} ₽</span>
+</div>
+
+
+<script type="text/javascript" src="../js/search.js"></script>
+
+<section>
+
+    <div class="products">
+        {{range .cart}}
+            <div class="product-wrapper">
+                <a href="" class="product">
+                    <img src="../pic/{{.Photo}}"/>
+                    <h1>{{.Name}}</h1>
+                    <h4>{{.Author}}</h4>
+                    <span class="old-price">₽ 999</span>
+                    <span class="new-price">₽ {{.Price}}</span>
+                </a>
+                <div class="quantity">
+                    <button class="plus-btn" onclick="window.location.href = '/cart/buy?id={{.ProductId}}';"type="button"  name="button">
+                        <img src="plus.svg" alt="" />
+                        <b>+</b>
+                    </button>
+                        <span>{{.CartQuantity}}</span>
+                    <button class="minus-btn" onclick="window.location.href = '/cart/remove?id={{.ProductId}}';" type="button" name="button">
+                        <img src="minus.svg" alt="" />
+                        <b>-</b>
+                    </button>
+                </div>
+            </div>
+        {{end}}
+    </div>
+</section>
+
+<footer>
+    <div class="footer">
+        <div class="logo">
+            <a href="index.html">
+                <span class="go">GO</span>
+                <span class="read">Read</span>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

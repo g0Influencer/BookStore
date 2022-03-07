@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Product</title>
+</head>
+<body>
+<h3>Edit Product</h3>
+<form method="post" action="/panel/update">
+  <table>
+    <tr>
+      <td>Id</td>
+      <td><input type="text" name="id" value="{{.product.Id}}"></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" name="name" value="{{.product.Name}}"> </td>
+    </tr>
+    <tr>
+    <tr>
+      <td>Author</td>
+      <td><input type="text" name="author" value="{{.product.Author}}"> </td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td><input type="number" name="price" min="0" value="{{.product.Price}}"></td>
+    </tr>
+    <tr>
+      <td>Quantity</td>
+      <td><input type="number" name="quantity" min="0" value="{{.product.Quantity}}"></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>
+        <textarea type="text" name="description" >{{.product.Description}}</textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>Photo</td>
+      <td>
+        <textarea name="photo" placeholder="enter pic url">{{.product.Photo}}</textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+        <input type="submit" value="Save">
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
