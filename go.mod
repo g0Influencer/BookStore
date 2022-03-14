@@ -1,4 +1,4 @@
-module file-share
+module github.com/g0Influencer/BookStore
 
 go 1.16
 

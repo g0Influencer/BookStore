@@ -1,11 +1,11 @@
 package main
 
 import (
-	"file-share/app"
-	"file-share/controllers/admincontroller"
-	"file-share/controllers/cartcontroller"
-	"file-share/controllers/favcontroller"
-	"file-share/controllers/productcontroller"
+	"github.com/g0Influencer/BookStore/app"
+	"github.com/g0Influencer/BookStore/controllers/admincontroller"
+	"github.com/g0Influencer/BookStore/controllers/cartcontroller"
+	"github.com/g0Influencer/BookStore/controllers/favcontroller"
+	"github.com/g0Influencer/BookStore/controllers/productcontroller"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
 	"log"

@@ -1,7 +1,7 @@
 package config
 
 import (
-	"file-share/app"
+	"github.com/g0Influencer/BookStore/app"
 	"github.com/jinzhu/gorm"
 	"log"
 )

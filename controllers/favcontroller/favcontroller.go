@@ -1,9 +1,9 @@
 package favcontroller
 
 import (
-	"file-share/app"
-	"file-share/config"
-	"file-share/models/productmodel"
+	"github.com/g0Influencer/BookStore/app"
+	"github.com/g0Influencer/BookStore/config"
+	"github.com/g0Influencer/BookStore/models/productmodel"
 	"html/template"
 	"log"
 	"net/http"

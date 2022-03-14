@@ -1,8 +1,8 @@
 package productmodel
 
 import (
-	"file-share/app"
-	"file-share/config"
+	"github.com/g0Influencer/BookStore/app"
+	"github.com/g0Influencer/BookStore/config"
 	"net/http"
 )
 

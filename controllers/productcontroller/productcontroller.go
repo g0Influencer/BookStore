@@ -1,7 +1,7 @@
 package productcontroller
 
 import (
-	"file-share/models/productmodel"
+	"github.com/g0Influencer/BookStore/models/productmodel"
 	"html/template"
 	"log"
 	"net/http"
