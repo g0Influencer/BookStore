@@ -10,5 +10,8 @@ This web-application is a pretty basic implementation of an online(e-commerce) s
 * `gorilla mux` was used to route requests 
 * `html/template` was used to display user data
 * API is backed by a `MySQL` database
+______
+# To install app
+`git clone https://github.com/g0Influencer/BookStore.git`
 
 
