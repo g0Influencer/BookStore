@@ -12,6 +12,6 @@ This web-application is a pretty basic implementation of an online(e-commerce) s
 * API is backed by a `MySQL` database
 ______
 # To install app
-`git clone https://github.com/g0Influencer/BookStore.git`
+`go get -u github.com/g0Influencer/BookStore/cmd`
 
 
